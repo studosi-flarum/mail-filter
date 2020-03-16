@@ -2,9 +2,7 @@
 
 Mail Filter extension for Flarum - filter e-mail registering by your sites with whitelists, blacklists and regular expression describing both
 
----
-
-<br>
+<br><br><br>
 
 ## Requirements
 
