@@ -1,6 +1,8 @@
 # Mail Filter
 
-Mail Filter extension for Flarum - filter e-mail registering by your sites with whitelists, blacklists and regular expression describing both
+Mail Filter extension for Flarum - filter e-mail registering by your sites with whitelists, blacklists and regular expression describing both.
+
+![License](https://img.shields.io/badge/license-Apache-2.0-blue.svg) [![Latest Stable Version](https://img.shields.io/packagist/v/studosi/mail-filter.svg)](https://packagist.org/packages/studosi/mail-filter)
 
 <br><br><br>
 
@@ -13,13 +15,25 @@ Other than that, there are no prerequisites. It's really a minimal extension.
 
 ## Installation
 
-Just use a simple command:
+Use [Bazaar](https://discuss.flarum.org/d/5151-flagrow-bazaar-the-extension-marketplace) or install manually with composer:
 
-```
+```sh
 composer require studosi/mail-filter
 ```
 
-**TO DO - NOT WORKING AS OF YET**
+<br><br>
+
+## Updating
+
+```sh
+composer update studosi/mail-filter
+```
+
+<br><br>
+
+## Links
+
+- [Packagist](https://packagist.org/packages/studosi/mail-filter)
 
 <br><br>
 
