@@ -37,6 +37,7 @@ composer update studosi/mail-filter
 ## Links
 
 - [Packagist](https://packagist.org/packages/studosi/mail-filter)
+- [GitHub](https://github.com/studosi-flarum/mail-filter/)
 
 <br>
 
