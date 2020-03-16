@@ -2,9 +2,11 @@
 
 Mail Filter extension for Flarum - filter e-mail registering by your sites with whitelists, blacklists and regular expression describing both.
 
-![License](https://img.shields.io/badge/license-Apache-2.0-blue.svg) [![Latest Stable Version](https://img.shields.io/packagist/v/studosi/mail-filter.svg)](https://packagist.org/packages/studosi/mail-filter)
+![License](https://img.shields.io/badge/license-Apache-2.0-blue.svg)
 
-<br><br><br>
+[![Latest Stable Version](https://img.shields.io/packagist/v/studosi/mail-filter.svg)](https://packagist.org/packages/studosi/mail-filter)
+
+<br><br>
 
 ## Requirements
 
@@ -12,6 +14,7 @@ This extension was built and tested on Flarum 0.1.0-beta12 and PHP7.4. If you ar
 
 Other than that, there are no prerequisites. It's really a minimal extension.
 
+<br>
 
 ## Installation
 
@@ -21,7 +24,7 @@ Use [Bazaar](https://discuss.flarum.org/d/5151-flagrow-bazaar-the-extension-mark
 composer require studosi/mail-filter
 ```
 
-<br><br>
+<br>
 
 ## Updating
 
@@ -29,19 +32,19 @@ composer require studosi/mail-filter
 composer update studosi/mail-filter
 ```
 
-<br><br>
+<br>
 
 ## Links
 
 - [Packagist](https://packagist.org/packages/studosi/mail-filter)
 
-<br><br>
+<br>
 
 ## Screenshots
 
 **TO ADD**
 
-<br><br>
+<br>
 
 ## How to use
 
@@ -54,13 +57,11 @@ In the admin panel, there are 4 categories of settings:
 
 Using these settings categories, you can introduce various constraints on who can register for the site - in further text, we'll call these constraints **rules**.
 
-<br>
 
 ### Whitelist and blacklist
 
 Rules in this category will be explicitly checked if they are the same (using the `==` operator in PHP).
 
-<br>
 
 ### Regular expression constraints
 
@@ -120,19 +121,19 @@ or
 
 which will be case-insensitive (although e-mails, which are URIs, are case insensitive, although I'm not sure if they're normalized by Flarum, would have to check).
 
-<br><br>
+<br>
 
 ## Names
 
 Names do not have to be **unique** - they're used for micro-categorizations and will likely be searchable in the future. Also, they are required by default, not for any functional reason, but for your good. People forget things :)
 
-<br><br>
+<br>
 
 ## Activity
 
 Every rule can be activated and deactivated without erasing them. This is done by using the switch left of the rule definition. When the server check if an e-mail is valid, checks for these rules will be skipped.
 
-<br><br>
+<br>
 
 ## Order of execution
 
@@ -150,7 +151,7 @@ As of now, the extension will do this:
   
 Currently, if the mail passes through the check, the function called `validate()` will return `0`, i.e. it uses C-esque returns. In the future there might be error codes added to the whole thing and exception throws might be completely moved to the `extend.php` file.
 
-<br><br>
+<br>
 
 ## Roadmap
 
@@ -160,7 +161,7 @@ Currently, if the mail passes through the check, the function called `validate()
 - Create a name-based search for each list
 - Clean the backend code up (I started JS and PHP programming **3 days ago**, give me some slack xD)
 
-<br><br>
+<br>
 
 ## About
 
