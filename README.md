@@ -138,17 +138,27 @@ Every rule can be activated and deactivated without erasing them. This is done b
 
 ## Order of execution
 
-As of now, the extension will do this:
+As of now, the extension will run this:
 
-- check if an entry matches any blacklist regular expression or exact blacklist entry
-  - if it does, set the `blacklisted` flag to `true`
-- check if the whitelist regular expression list **and** exact whitelist are empty
-  - if they are, **and** the `blacklisted` flag is not set to `true`, allow registration
-- check if an entry matches any whitelist regular expression or exact whitelist entry
-  - if it does, allow registration
-- if the whitelist components **didn't** allow registration:
-  - if the `blacklisted` flag is set, throw a `ValidationError` with the "blacklisted" error message.
-  - if the `blacklisted` flag is not set, throw a `ValidationError` with the "not whitelisted" error message.
+- check if the e-mail is on an exact blacklist
+  - if it is, throw a **blacklist exception**
+- check if the e-mail is on a regular expression blacklist
+  - if it is, set the `blacklisted` flag to `true`
+- if the `blacklisted` flag is set to `true`
+  - check if the e-mail is on an exact whitelist
+    - if it is, allow registration
+    - otherwise, throw a **blacklist exception**
+- if the `blacklisted` flag is set to `false`
+  - check if both whitelists are empty
+    - if they are, we presume that the site does not run whitelisting, so we allow registration
+  - check if we can find the e-mail on either whitelist
+    - if we can, allow registration, otherwise throw a **whitelist exception**
+    
+In other words, the priority chain is illustrated with this:
+
+```blacklist > whitelist > blacklist regular expression > whitelist regular expression```
+
+Of course, other priority chains are possible (ex. `whitelist > blacklist > whitelist regular expression > blacklist regular expression`), and this might be a setting in a future release.
   
 Currently, if the mail passes through the check, the function called `validate()` will return `0`, i.e. it uses C-esque returns. In the future there might be error codes added to the whole thing and exception throws might be completely moved to the `extend.php` file.
 
