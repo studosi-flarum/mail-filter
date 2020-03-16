@@ -1,0 +1,46 @@
+{
+  "name": "studosi/mail-filter",
+  "description": "Control what e-mails can register on your Flarum",
+  "keywords": ["flarum", "mail", "filter", "studosi"],
+  "type": "flarum-extension",
+  "license": "Apache-2.0",
+  "require":
+  {
+    "flarum/core": "^0.1.0-beta.8"
+  },
+
+  "authors":
+  [
+    {
+      "name": "Studosi",
+      "email": "flarum_repo@studosi.net",
+      "role": "Developer"
+    },
+    {
+      "name": "Yalfoosh",
+      "email": "headsouldev@gmail.com",
+      "role": "Developer"
+    }
+  ],
+
+  "autoload":
+  {
+    "psr-4": {"Studosi\\MailFilter\\": "src/"}
+  },
+
+  "extra":
+  {
+    "flarum-extension":
+    {
+      "title": "Mail Filter",
+      "icon":
+      {
+        "name": "fas fa-envelope-square",
+        "backgroundColor": "#000000",
+        "color": "#ff0000"
+      }
+    },
+
+    "flagrow": {"discuss": ""}
+  }
+}
