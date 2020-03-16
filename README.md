@@ -32,18 +32,18 @@ composer update studosi/mail-filter
 
 <br>
 
-## Links
-
-- [Packagist](https://packagist.org/packages/studosi/mail-filter)
-- [GitHub](https://github.com/studosi-flarum/mail-filter/)
-
-<br>
-
 ## Screenshots
 
 ![image](./resources/screen_1.png)
 ![image](./resources/screen_2.png)
 ![image](./resources/screen_3.png)
+
+<br>
+
+## Links
+
+- [Packagist](https://packagist.org/packages/studosi/mail-filter)
+- [GitHub](https://github.com/studosi-flarum/mail-filter/)
 
 <br>
 
