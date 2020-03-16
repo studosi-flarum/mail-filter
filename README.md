@@ -150,7 +150,7 @@ Currently, if the mail passes through the check, the function called `validate()
 
 ## About
 
-This plugin was originally written by [Yalfoosh](www.github.com/Yalfoosh). It is a part of the **Studoši** community - a Croatian education forum run by academic citizens.
+This plugin was originally written by [Yalfoosh](https://www.github.com/Yalfoosh). It is a part of the **Studoši** community - a Croatian education forum run by academic citizens.
 
 If you like it, give it a star :)
 
