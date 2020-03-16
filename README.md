@@ -43,7 +43,9 @@ composer update studosi/mail-filter
 
 ## Screenshots
 
-**TO ADD**
+![image](./resources/screen_1.png)
+![image](./resources/screen_2.png)
+![image](./resources/screen_3.png)
 
 <br>
 

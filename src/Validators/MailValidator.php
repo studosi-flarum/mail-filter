@@ -50,7 +50,7 @@ class MailValidator
     { throw new ValidationException([app("translator")->trans("studosi-mail-filter.forum.error.blacklisted")]); }
 
     private static function raiseWhite()
-    { throw new ValidationException([app("translator")->trans("studosi-mail-filter.forum.error.not_blacklisted")]); }
+    { throw new ValidationException([app("translator")->trans("studosi-mail-filter.forum.error.not_whitelisted")]); }
 
     public static function validate($emailString)
     {
