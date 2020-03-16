@@ -38,6 +38,6 @@ return
         }
     },
 
-    "down" => function(Builder $shcema)
-    { $schema->dropIfExists("mail_rules"); }
+    "down" => function(Builder $schema)
+    { $schema->dropIfExists("mail_rules"); },
 ];
