@@ -20,24 +20,21 @@ use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Schema\Builder;
 
 
-return
-[
-    "up" => function(Builder $schema)
-    {
-        if ($schema->hasTable("mail_rules")) return;
-        else
-        {
-            $schema->create("mail_rules", function (Blueprint $table)
-            {
-                $table->increments("id");
-                $table->integer("rule_type");
-                $table->string("name");
-                $table->string("value"); 
-                $table->boolean("active");
-            });
+return [
+    "up" => function (Builder $schema) {
+        if ($schema->hasTable("mail_rules")) {
+            return;
         }
-    },
 
-    "down" => function(Builder $schema)
-    { $schema->dropIfExists("mail_rules"); }
+        $schema->create("mail_rules", function (Blueprint $table) {
+            $table->increments("id");
+            $table->integer("rule_type");
+            $table->string("name");
+            $table->string("value"); 
+            $table->boolean("active");
+        });
+    },
+    "down" => function (Builder $schema) {
+        $schema->dropIfExists("mail_rules");
+    },
 ];
