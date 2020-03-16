@@ -124,12 +124,17 @@ Every rule can be activated and deactivated without erasing them. This is done b
 
 As of now, the extension will do this:
 
-- check if an entry matches any blacklist regular expression or exact blacklist entry -> if it does, set the `blacklisted` flag to `true`
-- check if the whitelist regular expression list **and** exact whitelist are empty -> if they are, **and** the `blacklisted` flag is not set to `true`, allow registration
-- check if an entry matches any whitelist regular expression or exact whitelist entry -> if it does, allow registration
-- if the whitelist components didn't allow registration:
+- check if an entry matches any blacklist regular expression or exact blacklist entry
+  - if it does, set the `blacklisted` flag to `true`
+- check if the whitelist regular expression list **and** exact whitelist are empty
+  - if they are, **and** the `blacklisted` flag is not set to `true`, allow registration
+- check if an entry matches any whitelist regular expression or exact whitelist entry
+  - if it does, allow registration
+- if the whitelist components **didn't** allow registration:
   - if the `blacklisted` flag is set, throw a `ValidationError` with the "blacklisted" error message.
   - if the `blacklisted` flag is not set, throw a `ValidationError` with the "not whitelisted" error message.
+  
+Currently, if the mail passes through the check, the function called `validate()` will return `0`, i.e. it uses C-esque returns. In the future there might be error codes added to the whole thing and exception throws might be completely moved to the `extend.php` file.
 
 <br><br>
 
