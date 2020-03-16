@@ -2,11 +2,9 @@
 
 Mail Filter extension for Flarum - filter e-mail registering by your sites with whitelists, blacklists and regular expression describing both.
 
-[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0) [![Latest Stable Version](https://img.shields.io/packagist/v/studosi/mail-filter.svg)](https://packagist.org/packages/studosi/mail-filter)
 
-[![Latest Stable Version](https://img.shields.io/packagist/v/studosi/mail-filter.svg)](https://packagist.org/packages/studosi/mail-filter)
-
-<br><br>
+<br>
 
 ## Requirements
 
