@@ -1,0 +1,49 @@
+studosi-mail-filter:
+    admin:
+        nav:
+            title: Mail Filter
+            desc: Dozvoli i zabrani registraciju sa određenim emailovima
+
+        settings:
+            rule:
+                name_placeholder: Naziv pravila
+
+                delete:
+                    question: 'Jeste li sigurni da želite obrisati pravilo "{rule_name}"?'
+                    yes: Da
+                    no: Ne
+
+        whitelist:
+            label: Popis uzvanika
+            desc: Emailovi uzvanika
+            placeholder: Email uzvanika...
+
+        whitelist_regex:
+            label: Popis regularnih izraza uzvanika
+            desc: Regularni izrazi emailova uzvanika
+            placeholder: Regularan izraz uzvanika...
+
+        blacklist:
+            label: Popis prognanika
+            desc: Emailovi prognanika
+            placeholder: Email prognanika...
+
+        blacklist_regex:
+            label: Popis regularnih izraza prognanika
+            desc: Regularni izrazi emailova prognanika
+            placeholder: Regularan izraz prognanika...
+
+        import:
+            label: Uvezi postavke
+            desc: Uvezi popise uzvanika, prognanika i regularne izraze za iste.
+            button: Uvezi
+
+        error:
+            invalid_regex: "Regularan izraz kojeg pokušavaš dodati nije valjan."
+
+    forum:
+        error:
+            generic: "Nešto je pošlo po zlu. Obrati se administratoru ove zajednice."
+
+            blacklisted: "Ovaj email ili domena na kojoj se nalazi je na popisu prognanika ove zajednice."
+            not_whitelisted: "Ovaj email ili domena na kojoj se nalazi nije na popisu uzvanika ove zajednice."
