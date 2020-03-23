@@ -2,7 +2,7 @@ studosi-mail-filter:
     admin:
         nav:
             title: Mail Filter
-            desc: Dozvoli i zabrani registraciju sa određenim emailovima
+            desc: Dozvolite i zabranite registraciju sa određenim emailovima.
 
         settings:
             rule:
@@ -39,11 +39,11 @@ studosi-mail-filter:
             button: Uvezi
 
         error:
-            invalid_regex: "Regularan izraz kojeg pokušavaš dodati nije valjan."
+            invalid_regex: "Regularan izraz kojeg pokušavate dodati nije valjan."
 
     forum:
         error:
-            generic: "Nešto je pošlo po zlu. Obrati se administratoru ove zajednice."
+            generic: "Nešto je pošlo po zlu. Obratite se administratoru ove zajednice."
 
             blacklisted: "Ovaj email ili domena na kojoj se nalazi je na popisu prognanika ove zajednice."
             not_whitelisted: "Ovaj email ili domena na kojoj se nalazi nije na popisu uzvanika ove zajednice."
